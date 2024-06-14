@@ -8,7 +8,7 @@ LABEL maintainer="Cedric van Putten <me@bycedric.com>"
 
 ARG EXPO_VERSION="latest"
 
-RUN npm install --global --unsafe-perm sharp-cli expo-cli@$EXPO_VERSION && npm cache clean --force
+RUN npm install --global --unsafe-perm sharp-cli eas-cli@$EXPO_VERSION && npm cache clean --force
 
 COPY entrypoint.sh LICENSE.md README.md /
 
