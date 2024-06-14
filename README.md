@@ -62,10 +62,10 @@ You can use this image to build a custom version of both node and expo-cli.
 It accepts both `NODE_VERSION` and `EXPO_VERSION` as build arguments.
 
 ```bash
-# create a node 16 and expo cli 5 image
+# create a node 18 and EAS CLI v10 image
 $ docker build . \
-    --build-arg NODE_VERSION=16 \
-    --build-arg EXPO_VERSION=5 \
+    --build-arg NODE_VERSION=18 \
+    --build-arg EXPO_VERSION=10 \
     --tag awsomeorg/expo-cli
 ```
 
